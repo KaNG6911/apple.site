@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  width: 100%;
+  /* width: 100%; */
   gap: 12px;
 }
 .head {
@@ -17,7 +17,7 @@ body {
   background-color: hsla(240, 11%, 96%, 0.8);
 }
 .headug {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 60px;
@@ -36,7 +36,7 @@ p > img {
   align-items: center;
 }
 #ug {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -54,6 +54,9 @@ p > img {
   width: 100%;
   height: 692px;
   color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: relative;
 }
 .pro161 {
@@ -64,6 +67,9 @@ p > img {
   height: 692px;
   color: white;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .pro162 {
   background-image: url(./Figure2.png);
@@ -73,11 +79,14 @@ p > img {
   height: 692px;
   color: black;
   position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .garchig {
   position: absolute;
-  top: 10%;
-  left: 41%;
+  top: 9%;
+
   display: flex;
   width: 405px;
   height: 172px;
@@ -86,19 +95,19 @@ p > img {
   gap: 20px;
 }
 h2 {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 600;
   font-size: 52px;
   line-height: 60px;
 }
 .garchig > p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
 }
 .garchig1 > p {
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
@@ -106,7 +115,7 @@ h2 {
 .garchig2 {
   display: flex;
   flex-direction: row;
-  font-family: "Inter", sans-serif;
+  font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -148,11 +157,132 @@ h2 {
 .garchig1 {
   position: absolute;
   top: 65%;
-  left: 41%;
+
   display: flex;
   width: 405px;
   height: 172px;
   flex-direction: column;
   align-items: center;
   gap: 20px;
+}
+.section1 {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 11px;
+}
+.zurag1 {
+  background-image: url(./Figure3.png);
+  background-position: center;
+  background-size: cover;
+  width: 49.5%;
+  height: 580px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zurag2 {
+  background-image: url(./Figure4.png);
+  background-position: center;
+  background-size: cover;
+  width: 49.5%;
+  height: 580px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zurag3 {
+  background-image: url(./Figure5.png);
+  background-position: center;
+  background-size: cover;
+  width: 49.5%;
+  height: 580px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zurag4 {
+  background-image: url(./Figure6.png);
+  background-position: center;
+  background-size: cover;
+  width: 49.5%;
+  height: 580px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zurag5 {
+  background-image: url(./Figure7.png);
+  background-position: center;
+  background-size: cover;
+  width: 49.5%;
+  height: 580px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.zurag6 {
+  background-image: url(./figure8.png);
+  background-position: center;
+  background-size: cover;
+  width: 49.5%;
+  height: 580px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.suul {
+  display: flex;
+  flex-direction: row;
+  height: 668px;
+  width: auto;
+  gap: 16px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  align-items: center;
+}
+.suul1 {
+  background-image: url(./disclaimer.jpg);
+  line-height: 100%;
+  width: 80%;
+  height: 668px;
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+
+}
+.suul2 {
+  background-image: url(./moon.png);
+  line-height: 100%;
+  width: 80%;
+  height: 668px;
+  background-position: center;
+  background-size: cover;
+    scroll-snap-align: center;
+  flex-shrink: 0;
+}
+.suul3 {
+  background-image: url(./shrinking.jpg);
+  line-height: 100%;
+  width: 80%;
+  height: 668px;
+  background-position: center;
+  background-size: cover;
+    scroll-snap-align: center;
+  flex-shrink: 0;
 }
