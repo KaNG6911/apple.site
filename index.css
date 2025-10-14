@@ -3,8 +3,12 @@
   padding: 0;
 }
 body {
-  /* width: 100%; */
+  height: 5120px;
   gap: 12px;
+  margin: 0;
+}
+.suul {
+  scroll-behavior: smooth;
 }
 .head {
   display: flex;
@@ -15,9 +19,19 @@ body {
   justify-content: center;
   gap: 24px;
   background-color: hsla(240, 11%, 96%, 0.8);
+  position: fixed;
+  z-index: 10;
+  opacity: 0.9;
+}
+.head > a {
+  border-bottom: none;
+}
+#headclone {
+  width: 100%;
+  height: 44px;
 }
 .headug {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 12px;
   line-height: 60px;
@@ -36,7 +50,7 @@ p > img {
   align-items: center;
 }
 #ug {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 20px;
@@ -95,19 +109,19 @@ p > img {
   gap: 20px;
 }
 h2 {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 600;
   font-size: 52px;
   line-height: 60px;
 }
 .garchig > p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
 }
 .garchig1 > p {
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 32px;
@@ -115,7 +129,7 @@ h2 {
 .garchig2 {
   display: flex;
   flex-direction: row;
-  font-family: 'Inter', sans-serif;
+  font-family: "Inter", sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 20px;
@@ -169,8 +183,8 @@ h2 {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  gap: 10px;
-  padding: 11px;
+  gap: 12px;
+  padding: 12px 0 12px 12px;
 }
 .zurag1 {
   background-image: url(./Figure3.png);
@@ -182,6 +196,25 @@ h2 {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
+}
+.zurag1 > h3 {
+  position: absolute;
+  top: 94%;
+  left: 42%;
+  font-family: "Inter", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 18px;
+  background: linear-gradient(
+    90deg,
+    hsla(205, 100%, 48%, 1),
+    hsla(274, 96%, 69%, 1),
+    hsla(346, 87%, 60%, 1),
+    hsla(21, 100%, 48%, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .zurag2 {
@@ -192,10 +225,24 @@ h2 {
   height: 580px;
   position: relative;
   display: flex;
+  justify-content: center;
+  color: white;
+}
+.zurag21 {
+  display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 10px;
+  position: absolute;
+  top: 70%;
 }
-
+.zurag21 > p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(255, 255, 255, 0.673);
+}
 .zurag3 {
   background-image: url(./Figure5.png);
   background-position: center;
@@ -207,7 +254,21 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
-
+.zurag31 {
+  position: absolute;
+  top: 8%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.zurag31 > p {
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: rgba(32, 32, 32, 0.767);
+}
 .zurag4 {
   background-image: url(./Figure6.png);
   background-position: center;
@@ -243,10 +304,13 @@ h2 {
   flex-direction: column;
   align-items: center;
 }
+h2 {
+  margin: -15px;
+}
 .suul {
   display: flex;
   flex-direction: row;
-  height: 668px;
+  /* height: 668px; */
   width: auto;
   gap: 16px;
   overflow-x: scroll;
@@ -258,31 +322,193 @@ h2 {
 .suul1 {
   background-image: url(./disclaimer.jpg);
   line-height: 100%;
-  width: 80%;
-  height: 668px;
+  width: 65%;
+  height: 850px;
   background-position: center;
   background-size: cover;
   scroll-snap-align: center;
   flex-shrink: 0;
-
+  position: relative;
 }
 .suul2 {
   background-image: url(./moon.png);
   line-height: 100%;
-  width: 80%;
-  height: 668px;
+  width: 65%;
+  height: 850px;
   background-position: center;
   background-size: cover;
-    scroll-snap-align: center;
+  scroll-snap-align: center;
   flex-shrink: 0;
+  position: relative;
+}
+.suul21 {
+  position: absolute;
+  top: 88%;
+  left: 10%;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: rgba(255, 255, 255, 0.923);
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+}
+span {
+  background-color: white;
+  padding: 11px 17px 11px 17px;
+  border-radius: 23px;
+  color: black;
 }
 .suul3 {
   background-image: url(./shrinking.jpg);
   line-height: 100%;
-  width: 80%;
-  height: 668px;
+  width: 65%;
+  height: 850px;
   background-position: center;
   background-size: cover;
-    scroll-snap-align: center;
+  scroll-snap-align: center;
   flex-shrink: 0;
+  position: relative;
+}
+.suul4 {
+  background-image: url(https://pinecone-academy-fgmu.vercel.app/images/carousel/napoleon.jpg);
+  line-height: 100%;
+  width: 65%;
+  height: 850px;
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.suul5 {
+  background-image: url(https://pinecone-academy-fgmu.vercel.app/images/carousel/pressumed-innocent.jpg);
+  line-height: 100%;
+  width: 65%;
+  height: 850px;
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.suul6 {
+  background-image: url(https://pinecone-academy-fgmu.vercel.app/images/carousel/lady-in-the-lake.jpg);
+  line-height: 100%;
+  width: 65%;
+  height: 850px;
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.suul7 {
+  background-image: url(https://pinecone-academy-fgmu.vercel.app/images/carousel/k-pop-idols.jpg);
+  line-height: 100%;
+  width: 65%;
+  height: 850px;
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.suul8 {
+  background-image: url(https://pinecone-academy-fgmu.vercel.app/images/carousel/bad-monkey.jpg);
+  line-height: 100%;
+  width: 65%;
+  height: 850px;
+  background-position: center;
+  background-size: cover;
+  scroll-snap-align: center;
+  flex-shrink: 0;
+  position: relative;
+}
+.tablist {
+  width: 100%;
+  height: 35px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.tab {
+  width: 9px;
+  height: 9px;
+  border-radius: 400px;
+  background-color: hsla(0, 0%, 0%, 0.42);
+}
+.tab:hover {
+  background-color: rgba(0, 0, 0, 0.679);
+}
+.footer {
+  height: 236px;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+.footer1 {
+  background-image: url(./Background1.png);
+  background-position: center;
+  background-size: cover;
+  width: 417px;
+  height: 236px;
+  background-color: blue;
+  position: relative;
+}
+.footer2 {
+  background-image: url(./Background2.png);
+  background-position: center;
+  background-size: cover;
+  width: 417px;
+  height: 236px;
+  background-color: blue;
+  position: relative;
+}
+.footer3 {
+  background-image: url(./Background3.png);
+  background-position: center;
+  background-size: cover;
+  width: 417px;
+  height: 236px;
+  background-color: blue;
+  position: relative;
+}
+.footer4 {
+  width: 417px;
+  height: 236px;
+  background-color: hsla(211, 30%, 15%, 1);
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  align-items: center;
+  padding: 0 0 0 20px;
+  gap: 20px;
+  color: white;
+}
+.footer5 {
+  width: 417px;
+  height: 236px;
+  background-color: hsla(22, 67%, 76%, 1);
+  position: relative;
+}
+.footer4 > img {
+  width: 200px;
+  height: 200px;
+}
+h6 {
+  position: absolute;
+  top: 88%;
+  left: 4%;
+  color: white;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 18px;
+  letter-spacing: -0.28px;
 }
