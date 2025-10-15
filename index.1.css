@@ -1,12 +1,13 @@
 * {
   margin: 0;
-  padding: 0;
 }
 body {
   height: 5120px;
   gap: 12px;
   margin: 0;
   position: relative;
+  width: 100%;
+  background-color: rgba(245, 245, 247, 1);
 }
 .head {
   display: flex;
@@ -19,7 +20,7 @@ body {
   background-color: hsla(240, 11%, 96%, 0.8);
   position: fixed;
   z-index: 10;
-  opacity: 1;
+  opacity: 0.9;
 }
 #headclone {
   width: 100%;
@@ -43,7 +44,7 @@ p > img {
   gap: 4px;
   justify-content: center;
   align-items: center;
-  /* z-index: 9; */
+  z-index: 9;
   background-color: white;
   position: absolute;
 }
@@ -97,10 +98,311 @@ p > img {
   background: rgba(253, 140, 31, 1);
   filter: blur(9px);
 }
-/* #section {
+#section11 {
+  position: absolute;
+  width: 100%;
+  gap: 24%;
+  top: 220px;
   display: flex;
   height: 100px;
+  justify-content: space-evenly;
+  /* padding: 0 140px 0 140px; */
+  /* background-color: aquamarine; */
+}
+#section12 {
+  display: flex;
+  flex-direction: row;
+  gap: 32px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 44px;
+  line-height: 52px;
+  color: rgba(110, 110, 115, 1);
+}
+span {
+  background: linear-gradient(
+    90deg,
+    hsla(205, 100%, 48%, 1),
+    hsla(274, 96%, 69%, 1),
+    hsla(346, 87%, 60%, 1),
+    hsla(21, 100%, 48%, 1)
+  );
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+#section21 {
+  display: flex;
+  gap: 16px;
+}
+#zuragugnuud {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+.minis {
+  width: 100%;
+  /* background-color: blue; */
+  position: absolute;
+  top: 430px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 30px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  align-items: center;
+}
+.minis1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 20px;
+}
+#bagts1 {
+  position: absolute;
+  top: 630px;
+  left: 13%;
+  gap: 24px;
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+}
+#bagts1 > p {
+  display: flex;
+  gap: 10px;
+}
+.ursdag {
+  /* background-color: aqua; */
+  height: 500px;
+  width: 100%;
+  display: flex;
+  gap: 20px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  align-items: center;
+}
+.zurag1 {
+  background-image: url(./store-card-50-holiday-iphone-pro-202411_GEO_US.png);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.zurag2 {
+  background-image: url(./store-card-50-holiday-watch-s10-202411.png);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.zurag3 {
+  background-image: url(./store-card-50-holiday-ipad-mini-202411.png);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.zurag4 {
+  background-image: url(./macbook.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 500px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.zurags > h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(182, 68, 0, 1);
+}
+.zurags > h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 26px;
+  line-height: 32px;
+}
+.zurags > h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 20px;
+  color: rgb(103, 103, 103);
+}
+.zurags {
+  position: absolute;
+  bottom: 76%;
+  left: 7%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+#bagts2 {
+  position: absolute;
+  top: 1250px;
+  left: 13%;
+  gap: 24px;
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* background-color: aqua; */
+}
+#bagts2 > p {
+  display: flex;
+  gap: 10px;
+}
+.zurag20 {
+  background-image: url(./store-card-40-holiday-engraving-202411.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  width: 400px;
+  height: 500px;
+  flex-shrink: 0;
+  position: relative;
+}
+.zurag21 {
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
+.img21 {
+  width: 230px;
+  height: 230px;
+  object-fit: cover;
+}
+.mongo {
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+  align-items: start;
+  /* background-color: aqua; */
+  width: 270px;
+  height: 100px;
   justify-content: space-between;
-  padding: 0 140px 0 140px;
-  background-color: aquamarine;
-} */
+}
+.lai2 {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.lai2 > h4 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: rgba(182, 68, 0, 1);
+}
+.lai2 > h2 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-style: bold;
+  font-size: 18px;
+  line-height: 20px;
+}
+.mongo > h3 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 18px;
+  color: rgb(103, 103, 103);
+}
+#laimda {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  position: absolute;
+  top: 53px;
+  left: 30px;
+  width: 180px;
+}
+.laichu {
+  opacity: 0;
+}
+#bagts3 {
+  position: absolute;
+  top: 1900px;
+  left: 13%;
+  gap: 24px;
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* background-color: aqua; */
+}
+#bagts3 > p {
+  display: flex;
+  gap: 10px;
+}
+.zurag30 {
+  background-image: url(./store-card-40-holiday-quick-picks-202411.png);
+  background-position: center;
+  background-size: cover;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  width: 400px;
+  height: 500px;
+  flex-shrink: 0;
+  position: relative;
+}
+.zurag31 {
+  background-color: white;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px rgba(0, 0, 0, 0.08);
+  width: 313px;
+  height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+}
