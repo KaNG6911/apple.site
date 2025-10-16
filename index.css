@@ -6,6 +6,7 @@ body {
   height: 5120px;
   gap: 12px;
   margin: 0;
+  width: 100%;
 }
 .suul {
   scroll-behavior: smooth;
@@ -22,6 +23,10 @@ body {
   position: fixed;
   z-index: 10;
   opacity: 0.9;
+}
+.head1 {
+  display: flex;
+  gap: 24px;
 }
 #headclone {
   width: 100%;
@@ -136,13 +141,17 @@ h2 {
   background-color: hsla(210, 100%, 45%, 1);
   border-radius: 999px;
   display: flex;
-  padding: 12px 20px 12px 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px 8px 20px;
 }
 .garchig12 {
   background-color: white;
   border-radius: 999px;
   display: flex;
-  padding: 12px 20px 10px 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px 8px 20px;
   color: black;
 }
 .garchig13 {
@@ -156,14 +165,18 @@ h2 {
   border: 2px solid hsla(210, 100%, 45%, 1);
   border-radius: 999px;
   display: flex;
-  padding: 12px 20px 10px 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px 8px 20px;
   color: hsla(210, 100%, 45%, 1);
 }
 .buy1 {
   border: 2px solid white;
   border-radius: 999px;
   display: flex;
-  padding: 12px 20px 12px 20px;
+  justify-content: center;
+  align-items: center;
+  padding: 8px 20px 8px 20px;
 }
 .garchig1 {
   position: absolute;
@@ -187,7 +200,7 @@ h2 {
   background-image: url(./Figure3.png);
   background-position: center;
   background-size: cover;
-  width: 49.5%;
+  width: 49.3%;
   height: 580px;
   position: relative;
   display: flex;
@@ -198,7 +211,8 @@ h2 {
 .zurag1 > h3 {
   position: absolute;
   top: 94%;
-  left: 42%;
+  left: auto;
+  right: auto;
   font-family: "Inter", sans-serif;
   font-weight: 500;
   font-size: 14px;
@@ -218,7 +232,7 @@ h2 {
   background-image: url(./Figure4.png);
   background-position: center;
   background-size: cover;
-  width: 49.5%;
+  width: 49.3%;
   height: 580px;
   position: relative;
   display: flex;
@@ -244,7 +258,7 @@ h2 {
   background-image: url(./Figure5.png);
   background-position: center;
   background-size: cover;
-  width: 49.5%;
+  width: 49.3%;
   height: 580px;
   position: relative;
   display: flex;
@@ -270,7 +284,7 @@ h2 {
   background-image: url(./Figure6.png);
   background-position: center;
   background-size: cover;
-  width: 49.5%;
+  width: 49.3%;
   height: 580px;
   position: relative;
   display: flex;
@@ -282,7 +296,7 @@ h2 {
   background-image: url(./Figure7.png);
   background-position: center;
   background-size: cover;
-  width: 49.5%;
+  width: 49.3%;
   height: 580px;
   position: relative;
   display: flex;
@@ -294,7 +308,7 @@ h2 {
   background-image: url(./figure8.png);
   background-position: center;
   background-size: cover;
-  width: 49.5%;
+  width: 49.3%;
   height: 580px;
   position: relative;
   display: flex;
@@ -448,37 +462,45 @@ span {
   flex-direction: row;
   align-items: center;
   gap: 16px;
+  overflow-x: scroll;
+  overflow-y: hidden;
+  display: flex;
+  scroll-snap-type: x mandatory;
+  align-items: center;
 }
 .footer1 {
   background-image: url(./Background1.png);
   background-position: center;
   background-size: cover;
   width: 417px;
-  height: 236px;
+  height: 100%;
   background-color: blue;
   position: relative;
+  flex-shrink: 0;
 }
 .footer2 {
   background-image: url(./Background2.png);
   background-position: center;
   background-size: cover;
   width: 417px;
-  height: 236px;
+  height: 100%;
   background-color: blue;
   position: relative;
+  flex-shrink: 0;
 }
 .footer3 {
   background-image: url(./Background3.png);
   background-position: center;
   background-size: cover;
   width: 417px;
-  height: 236px;
+  height: 100%;
   background-color: blue;
   position: relative;
+  flex-shrink: 0;
 }
 .footer4 {
   width: 417px;
-  height: 236px;
+  height: 100%;
   background-color: hsla(211, 30%, 15%, 1);
   display: flex;
   flex-direction: row;
@@ -487,16 +509,22 @@ span {
   padding: 0 0 0 20px;
   gap: 20px;
   color: white;
+  flex-shrink: 0;
 }
 .footer5 {
   width: 417px;
-  height: 236px;
+  height: 100%;
   background-color: hsla(22, 67%, 76%, 1);
   position: relative;
+  flex-shrink: 0;
 }
 .footer4 > img {
-  width: 200px;
-  height: 200px;
+  width: 50%;
+  height: 80%;
+}
+.footer5 > img {
+  width: 60%;
+  height: 100%;
 }
 h6 {
   position: absolute;
@@ -508,4 +536,159 @@ h6 {
   font-size: 14px;
   line-height: 18px;
   letter-spacing: -0.28px;
+}
+
+/* FOR tablet */
+@media only screen and (min-width: 676px) and (max-width: 1023px) {
+  body {
+    height: 3815px;
+  }
+  .head > nav {
+    display: none;
+  }
+  .head > a {
+    display: none;
+  }
+  .head {
+    /* justify-content: space-between; */
+    gap: 82%;
+  }
+  #ug {
+    width: 55%;
+    text-align: center;
+  }
+  .pro16 {
+    background-image: url(./tablet1.png);
+    background-position: center;
+    height: 600px;
+    background-size: cover;
+  }
+  .pro161 {
+    background-image: url(./tablet2.png);
+    background-position: center;
+    height: 600px;
+    background-size: cover;
+  }
+  .pro162 {
+    /* background-image: url(./Figure3.png); */
+    height: 600px;
+  }
+  .zurag1 {
+    width: 48.7%;
+    height: 440px;
+  }
+  .zurag2 {
+    width: 48.7%;
+    height: 440px;
+  }
+  .zurag21 > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .zurag31 > p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .zurag3 {
+    width: 48.7%;
+    height: 440px;
+  }
+  .zurag4 {
+    width: 48.7%;
+    height: 440px;
+  }
+  .zurag5 {
+    width: 48.7%;
+    height: 440px;
+  }
+  .zurag6 {
+    width: 48.7%;
+    height: 440px;
+  }
+  h2 {
+    font-size: 38px;
+    line-height: 60px;
+  }
+  .garchig2 {
+    font-size: 13px;
+  }
+  .buy {
+    padding: 3px 12px 3px 12px;
+  }
+  .suul1 {
+    width: 84%;
+    height: 380px;
+  }
+  .suul2 {
+    width: 84%;
+    height: 380px;
+  }
+  .suul3 {
+    width: 84%;
+    height: 380px;
+  }
+  .suul4 {
+    width: 84%;
+    height: 380px;
+  }
+  .suul5 {
+    width: 84%;
+    height: 380px;
+  }
+  .suul6 {
+    width: 84%;
+    height: 380px;
+  }
+  .suul7 {
+    width: 84%;
+    height: 380px;
+  }
+  .suul8 {
+    width: 84%;
+    height: 380px;
+  }
+  .suul21 {
+    bottom: 15%;
+    left: 5%;
+    font-size: 12px;
+    line-height: 20px;
+  }
+  span {
+    padding: 5px 10px 5px 10px;
+  }
+  .tablist {
+    height: 23px;
+  }
+  .footer {
+    height: 120px;
+  }
+  .footer1 {
+    width: 28%;
+    height: 120px;
+  }
+  .footer2 {
+    width: 28%;
+    height: 120px;
+  }
+  .footer3 {
+    width: 28%;
+    height: 120px;
+  }
+  .footer4 {
+    width: 28%;
+    height: 120px;
+  }
+  .footer5 {
+    width: 28%;
+    height: 120px;
+  }
+  h6 {
+    font-size: 10px;
+    top: 84%;
+  }
+  .tab {
+    width: 8px;
+    height: 8px;
+  }
 }
