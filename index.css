@@ -102,7 +102,16 @@ p > img {
 .garchig {
   position: absolute;
   top: 9%;
-
+  display: flex;
+  width: 405px;
+  height: 172px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.garchig16 {
+  position: absolute;
+  top: 9%;
   display: flex;
   width: 405px;
   height: 172px;
@@ -467,13 +476,14 @@ span {
   display: flex;
   scroll-snap-type: x mandatory;
   align-items: center;
+  align-items: start;
 }
 .footer1 {
   background-image: url(./Background1.png);
   background-position: center;
   background-size: cover;
   width: 417px;
-  height: 100%;
+  height: 236px;
   background-color: blue;
   position: relative;
   flex-shrink: 0;
@@ -483,7 +493,8 @@ span {
   background-position: center;
   background-size: cover;
   width: 417px;
-  height: 100%;
+  height: 236px;
+
   background-color: blue;
   position: relative;
   flex-shrink: 0;
@@ -493,14 +504,14 @@ span {
   background-position: center;
   background-size: cover;
   width: 417px;
-  height: 100%;
+  height: 236px;
   background-color: blue;
   position: relative;
   flex-shrink: 0;
 }
 .footer4 {
   width: 417px;
-  height: 100%;
+  height: 236px;
   background-color: hsla(211, 30%, 15%, 1);
   display: flex;
   flex-direction: row;
@@ -513,7 +524,7 @@ span {
 }
 .footer5 {
   width: 417px;
-  height: 100%;
+  height: 236px;
   background-color: hsla(22, 67%, 76%, 1);
   position: relative;
   flex-shrink: 0;
@@ -537,11 +548,18 @@ h6 {
   line-height: 18px;
   letter-spacing: -0.28px;
 }
+#button {
+  display: flex;
+  justify-content: end;
+
+  padding: 15px;
+}
 
 /* FOR tablet */
-@media only screen and (min-width: 676px) and (max-width: 1023px) {
+@media only screen and (min-width: 677px) and (max-width: 1023px) {
   body {
-    height: 3815px;
+    height: 3800px;
+    width: 100%;
   }
   .head > nav {
     display: none;
@@ -551,7 +569,7 @@ h6 {
   }
   .head {
     /* justify-content: space-between; */
-    gap: 82%;
+    gap: 80%;
   }
   #ug {
     width: 55%;
@@ -572,6 +590,10 @@ h6 {
   .pro162 {
     /* background-image: url(./Figure3.png); */
     height: 600px;
+  }
+  .section1 {
+    padding: 7px 0 7px 12px;
+    gap: 7px;
   }
   .zurag1 {
     width: 48.7%;
@@ -614,6 +636,9 @@ h6 {
     font-size: 13px;
   }
   .buy {
+    padding: 3px 12px 3px 12px;
+  }
+  .buy1 {
     padding: 3px 12px 3px 12px;
   }
   .suul1 {
@@ -661,7 +686,7 @@ h6 {
     height: 23px;
   }
   .footer {
-    height: 120px;
+    height: 150px;
   }
   .footer1 {
     width: 28%;
@@ -684,8 +709,193 @@ h6 {
     height: 120px;
   }
   h6 {
-    font-size: 10px;
-    top: 84%;
+    font-size: 11px;
+    top: 103%;
+    color: black;
+  }
+  .tab {
+    width: 8px;
+    height: 8px;
+  }
+  #button {
+    padding: 0 15px 15px 0;
+  }
+}
+/* FOR MOBILE PHONE */
+@media only screen and (max-width: 676px) {
+  body {
+    height: 3750px;
+  }
+  .head > nav {
+    display: none;
+  }
+  .head > a {
+    display: none;
+  }
+  .head {
+    /* justify-content: space-between; */
+    gap: 67%;
+  }
+  #ug {
+    width: 75%;
+    text-align: center;
+  }
+  #section {
+    height: 68px;
+  }
+  .pro16 {
+    background-image: url(./4d617ff6192318499aff8aebb56aaf232c8f00d4.jpg);
+    width: 100%;
+    height: 500px;
+  }
+  .garchig {
+    top: 70%;
+    gap: 10px;
+  }
+  .garchig > p {
+    font-size: 17px;
+    color: rgba(255, 255, 255, 0.757);
+  }
+  .pro161 {
+    background-image: url(./figure11.png);
+    width: 100%;
+    height: 500px;
+  }
+  .garchig16 {
+    gap: 10px;
+  }
+  .garchig16 > p {
+    font-size: 19px;
+    color: rgba(255, 255, 255, 0.757);
+  }
+  .pro162 {
+    display: none;
+  }
+  .section1 {
+    padding: 12px 0 12px 0;
+  }
+  .zurag1 {
+    width: 100%;
+    height: 500px;
+  }
+  .zurag2 {
+    width: 100%;
+    height: 500px;
+  }
+  .zurag21 > p {
+    font-size: 14px;
+    line-height: 20px;
+  }
+  .zurag31 > p {
+    font-size: 14px;
+    line-height: 20px;
+    text-align: center;
+  }
+  .zurag3 {
+    width: 100%;
+    height: 500px;
+  }
+  .zurag4 {
+    width: 100%;
+    height: 500px;
+  }
+  .zurag5 {
+    width: 100%;
+    height: 500px;
+  }
+  .zurag6 {
+    width: 100%;
+    height: 500px;
+  }
+  h2 {
+    font-size: 38px;
+    line-height: 60px;
+  }
+  .garchig2 {
+    font-size: 13px;
+  }
+  .buy {
+    padding: 3px 12px 3px 12px;
+  }
+  .buy1 {
+    padding: 3px 12px 3px 12px;
+  }
+  .suul1 {
+    width: 80%;
+    height: 500px;
+    background-image: url(./Link7.png);
+  }
+  .suul2 {
+    background-image: url(./Link8.png);
+    width: 80%;
+    height: 500px;
+  }
+  .suul3 {
+    background-image: url(./Link9.png);
+    width: 80%;
+    height: 500px;
+  }
+  .suul4 {
+    background-image: url(./Link10.png);
+    width: 80%;
+    height: 500px;
+  }
+  .suul5 {
+    background-image: url(./Link11.png);
+    width: 80%;
+    height: 500px;
+  }
+  .suul6 {
+    background-image: url(./Link12.png);
+    width: 80%;
+    height: 500px;
+  }
+  .suul7 {
+    background-image: url(./Link13.png);
+    width: 80%;
+    height: 500px;
+  }
+  .suul8 {
+    background-image: url(./Link14.png);
+    width: 80%;
+    height: 500px;
+  }
+  .suul21 {
+    display: none;
+  }
+  .tablist {
+    height: 48px;
+    gap: 6%;
+  }
+  .footer {
+    height: 145px;
+    align-items: start;
+    gap: 9px;
+  }
+  .footer1 {
+    width: 52%;
+    height: 120px;
+  }
+  .footer2 {
+    width: 52%;
+    height: 120px;
+  }
+  .footer3 {
+    width: 52%;
+    height: 120px;
+  }
+  .footer4 {
+    width: 52%;
+    height: 120px;
+  }
+  .footer5 {
+    width: 52%;
+    height: 120px;
+  }
+  h6 {
+    font-size: 11px;
+    top: 103%;
+    color: black;
   }
   .tab {
     width: 8px;

@@ -2,7 +2,7 @@
   margin: 0;
 }
 body {
-  height: 5120px;
+  height: 4700px;
   gap: 12px;
   margin: 0;
   position: relative;
@@ -385,6 +385,25 @@ span {
   display: flex;
   gap: 10px;
 }
+#bagts4 > p {
+  display: flex;
+  gap: 10px;
+}
+#bagts5 > p {
+  display: flex;
+  gap: 10px;
+}
+#bagts6 > p {
+  display: flex;
+  gap: 10px;
+  /* background-color: aqua; */
+}
+#bagts6 > nav {
+  display: flex;
+  gap: 10px;
+  /* background-color: aqua; */
+  margin: -20px 0 0;
+}
 .zurag30 {
   background-image: url(./store-card-40-holiday-quick-picks-202411.png);
   background-position: center;
@@ -407,4 +426,295 @@ span {
   justify-content: center;
   align-items: center;
   flex-shrink: 0;
+}
+#bagts4 {
+  position: absolute;
+  top: 2550px;
+  left: 13%;
+  gap: 24px;
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* background-color: aqua; */
+}
+.box11 {
+  background-image: url(./store-card-50-holiday-delivery-pickup-202411.png);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.box12 {
+  width: 650px;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex-shrink: 0;
+}
+.box121 {
+  background-color: white;
+  width: 313px;
+  height: 240px;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  position: relative;
+}
+.box121 > p {
+  position: absolute;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 22px;
+  line-height: 28px;
+  top: 62px;
+  left: 34px;
+  width: 238px;
+}
+.box13 {
+  background-image: url(./store-card-50-holiday-trade-in-202411.png);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+#box131 {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: hsla(240, 2%, 44%, 1);
+}
+#box132 {
+  position: absolute;
+  width: 330px;
+  top: 54px;
+  left: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 32px;
+}
+.box14 {
+  background-image: url(./7be9e8c4cd1a574c53bacf2396a17f1007bfc091.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+#bagts5 {
+  position: absolute;
+  top: 3200px;
+  left: 13%;
+  gap: 24px;
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* background-color: aqua; */
+}
+.box51 {
+  background-image: url(./store-card-50-holiday-apple-music-202411.png);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+#box133 {
+  width: 300px;
+  position: absolute;
+  top: 130px;
+  left: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 20px;
+  color: rgb(124, 124, 136);
+}
+.box52 {
+  background-image: url(./store-card-50-holiday-apple-tv-202411.png);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+#box521 {
+  position: absolute;
+  top: 31px;
+  left: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 16px;
+  color: hsla(240, 11%, 96%, 1);
+}
+#box522 {
+  width: 360px;
+  position: absolute;
+  top: 54px;
+  left: 30px;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+  color: white;
+}
+.box53 {
+  background-image: url(./store-card-50-subscriptions-202108_GEO_US.png);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.box54 {
+  background-image: url(./4c93c049459dcec6247af385b50ac485e92e5a45.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 480px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+#bagts6 {
+  position: absolute;
+  top: 3850px;
+  left: 13%;
+  gap: 24px;
+  width: 87%;
+  display: flex;
+  flex-direction: column;
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 32px;
+  /* background-color: aqua; */
+}
+.box61 {
+  background-image: url(./iphone-card-40-carriertrade-202409.png);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.box62 {
+  background-image: url(./store-card-40-bts-edu-macbook-air-ipad-air-202406.png);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.box63 {
+  background-image: url(./store-card-40-refurb-202408.png);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.box64 {
+  background-image: url(./iphone-card-40-business-202409.png);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.box65 {
+  background-image: url(./9511d82e0fa4f14f3d23b485ab3928f9d27a5012.jpg);
+  background-position: center;
+  background-size: cover;
+  width: 400px;
+  height: 100%;
+  border-radius: 18px;
+  box-shadow: 2px 4px 12px hsla(0, 0%, 0%, 0.08);
+  flex-shrink: 0;
+  position: relative;
+}
+.footer {
+  height: 96px;
+  width: 80%;
+  display: flex;
+  gap: 24px;
+  flex-direction: column;
+  position: absolute;
+  top: 4530px;
+  left: 13%;
+}
+#footer1 {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 32px;
+}
+#footer2 {
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+}
+.footers {
+  display: flex;
+  gap: 8px;
+  border-radius: 999px;
+  border: 1px solid rgba(30, 30, 32, 0.512);
+  padding: 10px 12px 10px 12px;
+  color: rgba(43, 43, 47, 0.868);
+  align-items: center;
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+}
+.footers > img {
+  width: 10px;
+  height: 10px;
 }
