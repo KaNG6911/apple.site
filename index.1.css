@@ -190,7 +190,7 @@ span {
 .ursdag {
   /* background-color: aqua; */
   height: 500px;
-  width: 100%;
+  width: 115%;
   display: flex;
   gap: 20px;
   overflow-x: scroll;
@@ -198,6 +198,15 @@ span {
   display: flex;
   scroll-snap-type: x mandatory;
   align-items: center;
+  position: absolute;
+  top: 200%;
+  left: -15%;
+}
+.none {
+  width: 12%;
+  height: 500px;
+  /* background-color: aqua; */
+  flex-shrink: 0;
 }
 .zurag1 {
   background-image: url(./store-card-50-holiday-iphone-pro-202411_GEO_US.png);

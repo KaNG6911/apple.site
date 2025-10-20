@@ -725,6 +725,8 @@ h6 {
 @media only screen and (max-width: 676px) {
   body {
     height: 3750px;
+    /* background-color: aquamarine; */
+    width: 100%;
   }
   .head > nav {
     display: none;
@@ -734,11 +736,12 @@ h6 {
   }
   .head {
     /* justify-content: space-between; */
-    gap: 67%;
+    gap: 65%;
   }
   #ug {
-    width: 75%;
+    width: 73%;
     text-align: center;
+    /* background-color: aquamarine; */
   }
   #section {
     height: 68px;
@@ -821,43 +824,43 @@ h6 {
     padding: 3px 12px 3px 12px;
   }
   .suul1 {
-    width: 80%;
+    width: 75%;
     height: 500px;
     background-image: url(./Link7.png);
   }
   .suul2 {
     background-image: url(./Link8.png);
-    width: 80%;
+    width: 75%;
     height: 500px;
   }
   .suul3 {
     background-image: url(./Link9.png);
-    width: 80%;
+    width: 75%;
     height: 500px;
   }
   .suul4 {
     background-image: url(./Link10.png);
-    width: 80%;
+    width: 75%;
     height: 500px;
   }
   .suul5 {
     background-image: url(./Link11.png);
-    width: 80%;
+    width: 75%;
     height: 500px;
   }
   .suul6 {
     background-image: url(./Link12.png);
-    width: 80%;
+    width: 75%;
     height: 500px;
   }
   .suul7 {
     background-image: url(./Link13.png);
-    width: 80%;
+    width: 75%;
     height: 500px;
   }
   .suul8 {
     background-image: url(./Link14.png);
-    width: 80%;
+    width: 75%;
     height: 500px;
   }
   .suul21 {
@@ -871,6 +874,8 @@ h6 {
     height: 145px;
     align-items: start;
     gap: 9px;
+    width: 100%;
+    /* background-color: aquamarine; */
   }
   .footer1 {
     width: 52%;
@@ -900,5 +905,9 @@ h6 {
   .tab {
     width: 8px;
     height: 8px;
+  }
+  #button {
+    padding: 10px 15px 15px 0;
+    /* background-color: aquamarine; */
   }
 }
